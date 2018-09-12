@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>资料下载</title>
+		<link rel="stylesheet" type="text/css" href="css/all.css.css"/>
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<link rel="stylesheet" type="text/css" href="css/public.css"/>
+		<link rel="stylesheet" type="text/css" href="dist/layui/css/layui.css"/>
+		<script src="js/jquery1.3.2.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/JS_all.js.js" type="text/javascript" charset="utf-8"></script>
+		<style type="text/css">
+			.biaoti{
+				width: 875px;
+				margin: 0 auto 8px;
+				/*overflow: hidden;*/
+			}
+			.biaoti .biaojihe{
+				height: 60px;
+				line-height: 60px;
+				border-bottom: 1px solid #DDDDDD;
+				border-right: 1px solid #DDDDDD;
+			}
+			.biaoti .biaojihe span{
+				padding: 5px 25px;
+				cursor: pointer;
+			}
+			.biaoti .biaojihe span:hover{
+				background-color: #DDDDDD;
+			}
+			.xiazia{
+				position: relative;
+				height: 100px;
+				/*line-height: 100px;*/
+				color: #DDDDDD;
+				font-size: 50px;
+				padding-top: 10px;
+
+			}
+			.xiazia .xbt1{
+				position: absolute;
+				font-size: 25px;
+				left: 210px;
+			}
+			.guanzijian{
+				border: 1px solid #DDDDDD;
+				height: 23px;
+				width: 140px;
+				margin-left: 110px;
+			}
+			.table {
+				width: 100%;
+				border-collapse: collapse;
+				text-align: center;
+				
+			}
+			.table tbody tr .wjmc{
+				text-align: left;
+			}
+			.table thead tr{
+				background: rgb(249,249,249);
+			}
+			.table thead tr td{
+				padding: 5px;
+			}
+			.table tbody tr{
+				border-bottom: 1px dashed #DDDDDD;
+			}
+			.table tbody tr td{
+				position:relative;
+				padding: 5px;
+			}
+			.imgtd{
+				padding-left: 10px;
+			}
+			.imgtd img{
+				height: 20px;
+			}
+			.xiaziatb i{
+				font-weight: bold;
+				color: #009688;
+				cursor: pointer;
+			}
+			.table tr td .left{
+				position: absolute;
+				visibility: hidden;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="navvv" >
+			<div id="publicheader" class="">
+
+			</div>
+		</div>
+		<br />
+		<div id="headtop" hidden="">
+			<img src="img/lll.jpg" width="100%" height="100%"/>
+		</div>
+		<br />
+		<div class="biaoti">
+			<p class="biaojihe">
+				<span>建设项目管理</span>
+				<span>体系与认证</span>
+				<span>危险化学品</span>
+				<span>低碳生活</span>
+				<span>综合管理</span>
+			</p>
+			<br />
+			<div class="layui-row">
+				<div class="layui-col-xs5">
+					<p class="xiazia">
+						资源下载
+						<span class="xbt1">Document</span>
+					</p>
+				</div>
+				<div class="layui-col-xs7">
+					<button class="layui-btn layui-btn-xs" id="plxz">批量下载</button>
+					<button class="layui-btn layui-btn-xs layui-btn-normal" id="qdxz" style="visibility: hidden;">确定下载</button>
+			<button class="layui-btn layui-btn-xs layui-btn-danger" id="qxxz" style="visibility: hidden;">取消下载</button>
+			
+					<input type="text" placeholder="  请 输 入 关 键 字" class="guanzijian"/>
+					<button class="layui-btn layui-btn-xs">搜索</button>
+				</div>
+			</div>
+			
+			
+			<table class="table">
+					<thead>
+						<tr>
+							<td width="10%">
+								<div class="left layui-form">
+									<input type="checkbox" name="" lay-skin="primary"> 
+								</div>格式
+							</td>
+							<td width="30%">文档名称</td>
+							<td width="10%">上传者</td>
+							<td width="10%">下载数</td>
+							<td width="10%">阅读量</td>
+							<td width="10%">需要积分</td>
+							<td width="10%">上传时间</td>
+							<td width="10%">操作</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="imgtd">
+								<div class="left layui-form">
+									<input type="checkbox" name="" id="cheAll" lay-skin="primary"> 
+								</div>
+								<div class="right"><img src="img/ppt.png"/></div>
+							</td>
+							<td class="wjmc">职业安全健康ppt</td>
+							<td>huangyuanping</td>
+							<td>50次</td>
+							<td>666次</td>
+							<td>50积分</td>
+							<td>2018-09-11</td>
+							<td class="xiaziatb" title="下载">
+								<i class="layui-icon layui-icon-download-circle"></i>  
+							</td>
+						</tr>
+						<tr>
+							<td class="imgtd">
+								<div class="left layui-form">
+									<input type="checkbox" name="" lay-skin="primary"> 
+								</div>
+								<div class="right"><img src="img/ppt.png"/></div>
+							</td>
+							<td class="wjmc">职业安全健康ppt</td>
+							<td>huangyuanping</td>
+							<td>50次</td>
+							<td>666次</td>
+							<td>50积分</td>
+							<td>2018-09-11</td>
+							<td class="xiaziatb" title="下载">
+								<i class="layui-icon layui-icon-download-circle"></i>  
+							</td>
+						</tr>
+						<tr>
+							<td class="imgtd">
+								<div class="left layui-form">
+									<input type="checkbox" name="" lay-skin="primary"> 
+								</div>
+								<div class="right"><img src="img/ppt.png"/></div>
+							</td>
+							<td class="wjmc">职业安全健康ppt</td>
+							<td>huangyuanping</td>
+							<td>50次</td>
+							<td>666次</td>
+							<td>50积分</td>
+							<td>2018-09-11</td>
+							<td class="xiaziatb" title="下载">
+								<i class="layui-icon layui-icon-download-circle"></i>  
+							</td>
+						</tr>
+						<tr>
+							<td class="imgtd">
+								<div class="left layui-form">
+									<input type="checkbox" name="" lay-skin="primary"> 
+								</div>
+								<div class="right"><img src="img/ppt.png"/></div>
+							</td>
+							<td class="wjmc">职业安全健康ppt</td>
+							<td>huangyuanping</td>
+							<td>50次</td>
+							<td>666次</td>
+							<td>50积分</td>
+							<td>2018-09-11</td>
+							<td class="xiaziatb" title="下载">
+								<i class="layui-icon layui-icon-download-circle"></i>  
+							</td>
+						</tr>
+						<tr>
+							<td class="imgtd">
+								<div class="left layui-form">
+									<input type="checkbox" name="" lay-skin="primary"> 
+								</div>
+								<div class="right"><img src="img/ppt.png"/></div>
+							</td>
+							<td class="wjmc">职业安全健康ppt</td>
+							<td>huangyuanping</td>
+							<td>50次</td>
+							<td>666次</td>
+							<td>50积分</td>
+							<td>2018-09-11</td>
+							<td class="xiaziatb" title="下载">
+								<i class="layui-icon layui-icon-download-circle"></i>  
+							</td>
+						</tr>
+						<tr>
+							<td class="imgtd">
+								<div class="left layui-form">
+									<input type="checkbox" name="" lay-skin="primary"> 
+								</div>
+								<div class="right"><img src="img/ppt.png"/></div>
+							</td>
+							<td class="wjmc">职业安全健康ppt</td>
+							<td>huangyuanping</td>
+							<td>50次</td>
+							<td>666次</td>
+							<td>50积分</td>
+							<td>2018-09-11</td>
+							<td class="xiaziatb" title="下载">
+								<i class="layui-icon layui-icon-download-circle"></i>  
+							</td>
+						</tr>
+						<tr>
+							<td class="imgtd">
+								<div class="left layui-form">
+									<input type="checkbox" name="" lay-skin="primary"> 
+								</div>
+								<div class="right"><img src="img/pdf.png"/></div>
+							</td>
+							<td class="wjmc">职业安全健康ppt</td>
+							<td>huangyuanping</td>
+							<td>50次</td>
+							<td>666次</td>
+							<td>50积分</td>
+							<td>2018-09-11</td>
+							<td class="xiaziatb" title="下载">
+								<i class="layui-icon layui-icon-download-circle"></i>  
+							</td>
+						</tr>
+						<tr>
+							<td class="imgtd">
+								<div class="left layui-form">
+									<input type="checkbox" name="" lay-skin="primary"> 
+								</div>
+								<div class="right"><img src="img/excle.png"/></div>
+							</td>
+							<td class="wjmc">职业安全健康ppt</td>
+							<td>huangyuanping</td>
+							<td>50次</td>
+							<td>666次</td>
+							<td>50积分</td>
+							<td>2018-09-11</td>
+							<td class="xiaziatb" title="下载">
+								<i class="layui-icon layui-icon-download-circle"></i>  
+							</td>
+						</tr>
+						<tr>
+							<td class="imgtd">
+								<div class="left layui-form">
+									<input type="checkbox" name="" lay-skin="primary"> 
+								</div>
+								<div class="right"><img src="img/world.png"/></div>
+							</td>
+							<td class="wjmc">职业安全健康ppt</td>
+							<td>huangyuanping</td>
+							<td>50次</td>
+							<td>666次</td>
+							<td>50积分</td>
+							<td>2018-09-11</td>
+							<td class="xiaziatb" title="下载">
+								<i class="layui-icon layui-icon-download-circle"></i>  
+							</td>
+						</tr>
+						<tr>
+							<td class="imgtd">
+								<div class="left layui-form">
+									<input type="checkbox" name="" lay-skin="primary"> 
+								</div>
+								<div class="right"><img src="img/ppt.png"/></div>
+							</td>
+							<td class="wjmc">职业安全健康ppt</td>
+							<td>huangyuanping</td>
+							<td>50次</td>
+							<td>666次</td>
+							<td>50积分</td>
+							<td>2018-09-11</td>
+							<td class="xiaziatb" title="下载">
+								<i class="layui-icon layui-icon-download-circle"></i>  
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			
+			
+		</div>
+		
+		<br />
+		<br />
+		<br />
+		<div id="bottom">
+			
+		</div>
+		<script src="dist/layui/layui.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery-3.2.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(function(){
+				$("#publicheader").load(window.location.origin + '/jingpingziliao/public/public_header.html');
+				$("#bottom").load(window.location.origin + '/jingpingziliao/public/public_bottom.html');
+				$("#publicheader").on("mouseover", ".nav1 > li", function() {
+					$(this).find("a").next().show();
+					$("#searchbanle").css("visibility", "hidden");
+				});
+				$("#publicheader").on("mouseout", ".nav1 > li", function() {
+					$(this).find("a").next().hide();
+					$("#searchbanle").css("visibility", "visible");
+				});
+				$("#plxz").on("click",function(){
+					$(".table tr td .left").css("visibility","visible");
+					$("#qxxz").css("visibility","visible");
+					$("#qdxz").css("visibility","visible");
+				})
+				//全选
+				$("thead .layui-form").on("click",function(){
+					var che = $(this).find(".layui-unselect");
+					if(che.is(".layui-form-checked")){
+						//全选
+						$("tbody .imgtd .layui-form-checkbox").addClass("layui-form-checked")
+					}else{
+						//全不选
+						$("tbody .imgtd .layui-form-checkbox").removeClass("layui-form-checked")
+					}
+					
+				})
+				//取消下载
+				$("#qxxz").on("click",function(){
+					$(".table .layui-form-checkbox").removeClass("layui-form-checked");
+					$(".table tr td .left").css("visibility","hidden");
+					$(this).css("visibility","hidden");
+					$("#qdxz").css("visibility","hidden");
+				})
+				//确定下载
+				$("#qdxz").on("click",function(){
+					alert("确定下载");
+					setTimeout(function(){
+						$("#qxxz").css("visibility","hidden");
+						$("#qdxz").css("visibility","hidden");
+						$(".table tr td .left").css("visibility","hidden");
+					},1000);
+					
+				})
+			})
+			layui.use("form",function(){
+				
+			})
+		</script>
+		
+	</body>
+</html>
